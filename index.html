@@ -1,120 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Stock Advisor Group – Stock Market Education Community</title>
-<meta name="description" content="A free educational community to learn stock market basics, charts, Nifty, Bank Nifty and options concepts in simple language. Education only.">
-<style>
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html{-webkit-text-size-adjust:100%}
-body{min-height:100vh;background:radial-gradient(circle at 15% 0,#7b2ff7 0,transparent 45%),radial-gradient(circle at 90% 100%,#f107a3 0,transparent 45%),#1a0638;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#fff;display:flex;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom))}
-.card{width:100%;max-width:440px;align-self:flex-start;border-radius:28px;padding:30px 14px 22px;text-align:center;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);box-shadow:0 12px 40px rgba(0,0,0,.35)}
-.avatar{width:116px;height:116px;border-radius:50%;object-fit:cover;background:#3b1a6e;box-shadow:0 0 0 4px #ffc93c,0 0 28px rgba(255,201,60,.55)}
-h1{margin-top:20px;font-size:clamp(26px,8vw,36px);line-height:1.15;font-weight:800}
-h1 span{display:block;background:linear-gradient(90deg,#ffd84d,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{margin:14px 4px 18px;color:#eadcff;font-size:15px;line-height:1.6}
-.btn{display:block;min-height:56px;padding:17px 10px;border-radius:40px;background:linear-gradient(90deg,#ffd84d,#ff8a1f);color:#2a0b4d;font-weight:800;font-size:clamp(16px,4.8vw,19px);text-decoration:none;box-shadow:0 8px 24px rgba(255,170,40,.45)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
-.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:12px 2px}
-.stat b{display:block;color:#ffd84d;font-size:clamp(14px,4.4vw,18px)}
-.stat small{color:#dccaf7;font-size:12px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 18px}
-.item{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:14px 10px;font-weight:700;font-size:clamp(12px,3.6vw,14.5px);text-align:left;line-height:1.3}
-.item i{font-style:normal;font-size:22px}
-.box{margin:0 0 14px;text-align:left;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:16px 14px}
-.box h2{font-size:17px;color:#ffd84d;margin-bottom:10px;text-align:center}
-.box p{font-size:14px;line-height:1.65;color:#eadcff;margin-bottom:8px}
-.box dl dt{font-size:14px;font-weight:700;color:#fff;margin-top:10px}
-.box dl dd{font-size:13.5px;line-height:1.55;color:#dccaf7;margin-top:2px}
-.steps{list-style:none;counter-reset:s}
-.steps li{counter-increment:s;position:relative;font-size:14px;line-height:1.55;color:#fff;padding:9px 0 9px 36px;border-top:1px solid rgba(255,255,255,.12)}
-.steps li:first-child{border-top:0}
-.steps li:before{content:counter(s);position:absolute;left:0;top:9px;width:26px;height:26px;border-radius:50%;background:#ffd84d;color:#2a0b4d;font-weight:800;font-size:13px;text-align:center;line-height:26px}
-.note{border-color:rgba(255,216,77,.5)}
-.disc{margin-top:16px;color:#c9b6e6;font-size:12px;line-height:1.6}
-</style>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4668758756680641');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4668758756680641&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Trade with munaaf - Price Action & Index Study</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #04090c;
+            color: #ecfdf5;
+            overflow-x: hidden;
+        }
+
+        h1, h2, .brand-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .emerald-grid-bg {
+            background-image: 
+                radial-gradient(circle at 50% -10%, rgba(16, 185, 129, 0.22) 0%, rgba(4, 9, 12, 0.95) 60%),
+                linear-gradient(to right, rgba(16, 185, 129, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(16, 185, 129, 0.04) 1px, transparent 1px);
+            background-size: 100% 100%, 28px 28px, 28px 28px;
+        }
+
+        .emerald-text-gradient {
+            background: linear-gradient(135deg, #6ee7b7 0%, #10b981 55%, #059669 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-emerald-glow {
+            box-shadow: 0 12px 35px -5px rgba(16, 185, 129, 0.5), 0 0 12px rgba(110, 231, 183, 0.35) inset;
+        }
+
+        .cta-emerald-glow:active {
+            transform: scale(0.98);
+        }
+
+        .slate-panel {
+            background: rgba(10, 18, 24, 0.82);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(16, 185, 129, 0.22);
+        }
+    </style>
 </head>
-<body>
-<main class="card">
-  <img class="avatar" src="https://iili.io/oKVlEEG.jpg" alt="Stock Advisor Group" width="116" height="116">
-  <h1>STOCK ADVISOR<span>GROUP ™</span></h1>
-  <p class="sub">Stock Market Education Community •<br>Learn Nifty, Bank Nifty &amp; Options Basics</p>
+<body class="min-h-screen flex flex-col justify-between antialiased emerald-grid-bg selection:bg-emerald-500 selection:text-slate-950">
 
-  <a class="btn" href="https://t.me/+CAruIKtBE1dlZmRl" rel="noopener">🚀 JOIN TELEGRAM</a>
+    <!-- Top Bar -->
+    <header class="w-full border-b border-emerald-950/80 bg-[#04090c]/90 backdrop-blur-md sticky top-0 z-40">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-2.5">
+                <img src="https://iili.io/nUnZ7Gs.jpg" alt="Trade with munaaf" class="w-9 h-9 rounded-xl border border-emerald-500/40 object-cover">
+                <span class="brand-font font-bold text-sm md:text-base tracking-wide text-white uppercase">Trade with munaaf</span>
+            </div>
+            <div class="flex items-center space-x-1.5 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-[10px] md:text-xs font-bold text-emerald-300 uppercase tracking-wider">Free Study Desk</span>
+            </div>
+        </div>
+    </header>
 
-  <div class="stats">
-    <div class="stat"><b>Free</b><small>Education</small></div>
-    <div class="stat"><b>Simple</b><small>Language</small></div>
-    <div class="stat"><b>Beginner</b><small>Friendly</small></div>
-  </div>
+    <!-- Main Hero & Value Section -->
+    <main class="flex-grow max-w-2xl mx-auto px-4 py-7 md:py-12 w-full flex flex-col items-center">
 
-  <div class="grid">
-    <div class="item"><i>📈</i>Nifty Basics</div>
-    <div class="item"><i>🏦</i>Bank Nifty Basics</div>
-    <div class="item"><i>💹</i>Options Basics</div>
-    <div class="item"><i>📊</i>Chart Reading</div>
-  </div>
+        <!-- Profile Emblem -->
+        <div class="relative mb-5">
+            <div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-emerald-500 via-teal-400 to-cyan-500 blur-md opacity-45"></div>
+            <img src="https://iili.io/nUnZ7Gs.jpg" alt="Trade with munaaf Logo" class="relative w-24 h-24 md:w-28 md:h-28 rounded-3xl border-2 border-emerald-400/80 object-cover shadow-2xl">
+        </div>
 
-  <section class="box">
-    <h2>About This Community</h2>
-    <p>This is a free learning space for students and beginners who want to understand how the Indian stock market works. Everything shared here is educational: concepts, explanations and examples, in simple language.</p>
-    <p>The goal is knowledge, not recommendations. Members learn to read charts, understand market terms and think about risk before anything else.</p>
-  </section>
+        <!-- Headline & Educational Subtext -->
+        <div class="text-center space-y-3 mb-6">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-[11px] md:text-xs text-emerald-300 font-semibold">
+                <i class="fa-solid fa-chart-line text-emerald-400"></i>
+                <span>Technical Structure • Price Action • Discipline</span>
+            </div>
+            
+            <h1 class="text-2xl md:text-4xl font-bold text-white leading-tight">
+                Market Ki Har Move Ke Peeche Ka <span class="emerald-text-gradient">Chart Logic</span> Samjhein
+            </h1>
+            
+            <p class="text-slate-300 text-xs md:text-base max-w-lg mx-auto leading-relaxed">
+                <strong>Trade with munaaf</strong> community ke saath Nifty, Bank Nifty aur major indices ke key levels aur clean price action setups ko daily study karein.
+            </p>
+        </div>
 
-  <section class="box">
-    <h2>Your Learning Path</h2>
-    <ol class="steps">
-      <li><b>Market Basics:</b> what shares, NSE, BSE and indices are</li>
-      <li><b>Index Concepts:</b> how Nifty 50 and Bank Nifty are made</li>
-      <li><b>Chart Reading:</b> candlesticks, trends, support and resistance</li>
-      <li><b>Options Basics:</b> call, put, strike price, expiry and premium</li>
-      <li><b>Risk Awareness:</b> stop-loss, position size and capital protection</li>
-      <li><b>Mindset:</b> patience, discipline and emotional control</li>
-    </ol>
-  </section>
+        <!-- Primary Telegram CTA -->
+        <div class="w-full max-w-md my-3 flex flex-col items-center">
+            <a href="https://t.me/+jw6XQWYsqhtiOGZl" target="_blank" rel="noopener noreferrer" class="w-full group inline-flex items-center justify-center py-4 md:py-5 px-6 text-base md:text-lg font-extrabold text-slate-950 transition-all duration-200 bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 rounded-2xl cta-emerald-glow">
+                <i class="fa-brands fa-telegram text-2xl md:text-3xl mr-3 group-hover:translate-x-0.5 transition-transform"></i>
+                <span class="tracking-wide uppercase">JOIN FREE TELEGRAM CHANNEL</span>
+            </a>
+            
+            <div class="flex items-center justify-center space-x-3 text-[11px] md:text-xs text-slate-400 mt-3 font-medium">
+                <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Zero Joining Fee</span>
+                <span>•</span>
+                <span class="flex items-center"><i class="fa-solid fa-book-open text-teal-400 mr-1.5"></i> Educational Insights Only</span>
+            </div>
+        </div>
 
-  <section class="box">
-    <h2>Key Terms Explained</h2>
-    <dl>
-      <dt>Nifty 50</dt>
-      <dd>An index of 50 large companies listed on the NSE. It shows the overall direction of the Indian market.</dd>
-      <dt>Bank Nifty</dt>
-      <dd>An index made up of major banking stocks. It reflects how the banking sector is moving.</dd>
-      <dt>Candlestick</dt>
-      <dd>A chart symbol that shows the open, high, low and close price for a time period.</dd>
-      <dt>Support &amp; Resistance</dt>
-      <dd>Price levels where a market has often paused or turned in the past.</dd>
-      <dt>Option</dt>
-      <dd>A contract linked to an underlying asset. It comes with a strike price and an expiry date.</dd>
-      <dt>Stop-loss</dt>
-      <dd>A risk-control concept that limits how much loss one is willing to accept on a position.</dd>
-    </dl>
-  </section>
+        <!-- Learning Modules Grid -->
+        <div class="w-full slate-panel rounded-2xl p-5 md:p-7 my-6">
+            <h2 class="text-xs md:text-sm font-bold text-emerald-300 mb-4 text-center tracking-widest uppercase">
+                Daily Learning Highlights
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/90 flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-layer-group text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs md:text-sm font-bold text-white">Index Zone Mapping</h3>
+                        <p class="text-[11px] text-slate-400 mt-0.5 leading-normal">Nifty aur Bank Nifty ke high-probability demand aur supply zones ki pehchan.</p>
+                    </div>
+                </div>
 
-  <section class="box note">
-    <h2>Please Note</h2>
-    <p>This channel shares educational content only. We do not offer buy or sell recommendations, and we do not manage anyone's money. Market learning needs time, practice and patience.</p>
-  </section>
+                <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/90 flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-teal-500/15 text-teal-400 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-shield-halved text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs md:text-sm font-bold text-white">Capital Protection Rules</h3>
+                        <p class="text-[11px] text-slate-400 mt-0.5 leading-normal">Position sizing aur strict risk-to-reward ratio maintain karne ke tarike.</p>
+                    </div>
+                </div>
 
-  <p class="disc">For educational and informational purposes only. Not investment advice. Past performance does not indicate future results, and we do not guarantee any returns. Investments in the securities market are subject to market risks; please consult a SEBI-registered advisor before making any investment decisions.</p>
-</main>
+                <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/90 flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-500/15 text-cyan-400 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-compass text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs md:text-sm font-bold text-white">Market Session Prep</h3>
+                        <p class="text-[11px] text-slate-400 mt-0.5 leading-normal">Opening bell se pehle global cues aur market sentiment ka clear overview.</p>
+                    </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/90 flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-brain text-xs"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xs md:text-sm font-bold text-white">Mindset & Discipline</h3>
+                        <p class="text-[11px] text-slate-400 mt-0.5 leading-normal">Overtrading aur impulsive entries se bachne ke practical frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEBI & Risk Compliance Box -->
+        <div class="w-full bg-slate-950/90 rounded-xl p-4 border border-slate-800/80 text-[11px] text-slate-400 space-y-2 leading-relaxed">
+            <div class="flex items-center text-emerald-400 font-bold uppercase tracking-wider text-[10px]">
+                <i class="fa-solid fa-circle-info mr-1.5"></i>
+                <span>SEBI & Market Risk Disclaimer</span>
+            </div>
+            <p>
+                We are <strong>not a SEBI-registered investment advisor or research analyst</strong>. All charts, commentary, and updates shared on this page and in the Telegram channel are strictly for <strong>educational and informational purposes</strong>.
+            </p>
+            <p>
+                Trading and investing in the stock market involve financial risk. We do not offer guaranteed returns, paid tips, or portfolio management. Please consult a certified financial advisor before making any investment decisions.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-900 bg-[#030709] py-5 text-center text-[11px] text-slate-500">
+        <div class="max-w-2xl mx-auto px-4 space-y-2.5">
+            <p class="font-medium text-slate-400">&copy; 2026 Trade with munaaf. All Rights Reserved.</p>
+            
+            <div class="flex justify-center space-x-3 text-slate-400">
+                <button type="button" onclick="openModal('privacyModal')" class="hover:text-emerald-400 transition-colors">Privacy Policy</button>
+                <span>•</span>
+                <button type="button" onclick="openModal('termsModal')" class="hover:text-emerald-400 transition-colors">Terms of Service</button>
+                <span>•</span>
+                <button type="button" onclick="openModal('disclaimerModal')" class="hover:text-emerald-400 transition-colors">Disclaimer</button>
+            </div>
+
+            <p class="text-[10px] text-slate-600 max-w-lg mx-auto leading-normal">
+                This site is not a part of the Facebook website or Meta Platforms, Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of META Platforms, Inc.
+            </p>
+            
+            <div class="pt-3 border-t border-slate-900/90 mt-3">
+                <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-400 transition-colors text-xs inline-flex items-center space-x-1.5 font-medium">
+                    <span>Promoted By</span>
+                    <span class="text-emerald-400 font-bold underline decoration-emerald-500/40">AD BUILD AGENCY</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Legal Modals -->
+    <div id="privacyModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onclick="if(event.target===this)closeModal('privacyModal')">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl p-6 max-w-md w-full text-xs text-slate-300 space-y-3">
+            <h3 class="text-base font-bold text-white">Privacy Policy</h3>
+            <p>We respect your privacy. This landing page acts solely as an informational gateway to our Telegram community and does not collect personal contact forms or sensitive financial details.</p>
+            <button type="button" onclick="closeModal('privacyModal')" class="mt-3 px-4 py-2.5 bg-emerald-500 text-slate-950 font-bold rounded-xl w-full">Close</button>
+        </div>
+    </div>
+
+    <div id="termsModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onclick="if(event.target===this)closeModal('termsModal')">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl p-6 max-w-md w-full text-xs text-slate-300 space-y-3">
+            <h3 class="text-base font-bold text-white">Terms of Service</h3>
+            <p>By visiting this page and joining our Telegram channel, you agree that all shared charts and discussions are for educational study only. You are solely responsible for your own trading decisions.</p>
+            <button type="button" onclick="closeModal('termsModal')" class="mt-3 px-4 py-2.5 bg-emerald-500 text-slate-950 font-bold rounded-xl w-full">Close</button>
+        </div>
+    </div>
+
+    <div id="disclaimerModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onclick="if(event.target===this)closeModal('disclaimerModal')">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl p-6 max-w-md w-full text-xs text-slate-300 space-y-3">
+            <h3 class="text-base font-bold text-white">SEBI & Risk Disclaimer</h3>
+            <p>Trade with munaaf is not registered with SEBI as an investment advisor or research analyst. No guaranteed returns, tips, or advisory services are provided. Stock market investments carry market risk.</p>
+            <button type="button" onclick="closeModal('disclaimerModal')" class="mt-3 px-4 py-2.5 bg-emerald-500 text-slate-950 font-bold rounded-xl w-full">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+    </script>
+
 </body>
 </html>
